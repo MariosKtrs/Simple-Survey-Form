@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Survey Form</title>
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+      <h1 id="title">Product Satisfaction Survey</h1>
+      <p id="description">Thank you for using InstaClean Shampoo!</p>
+      <form id="survey-form" action="http://example.com" method="post">
+         <fieldset id="info">
+            <label for="name" id="name-label">Name
+            <input type="text" id="name" placeholder="Enter your Name" required>
+            </label>
+            <label id="email-label" for="email">
+            Email
+            <input type="email" id="email" placeholder="Enter your E-mail" required>
+            </label>
+            <label for="number" id="number-label">Age
+            <input type="number" id="number" min="18" max="120" placeholder="Enter your Age (optional) ">
+            </label>
+            <label for="date" id="date-label">Date of purchase
+            <input type="date" id="date">
+            </label>
+         </fieldset>
+         <fieldset id="choices">
+            <label id="gender-label" for="gender">What is your gender?
+            <label id="male-label" for="male">
+            <input type="radio" value="male" id="male" name="gender">
+            Male</label>
+            <label id= "female-label" for="female">  
+            <input type="radio" id="female" value="female" name="gender">
+            Female </label>
+            <label id= "other-label" for="other">  
+            <input type="radio" id="other" value="other" name="gender">
+            Other </label>
+            </label>
+            <label for="dropdown" id="experience-label">Overall experience</label>
+            <select id="dropdown">
+               <option value="">Choose an option:</option>
+               <option value="very-positive">Very Positive</option>
+               <option value="positive">Positive</option>
+               <option value="ok">OK</option>
+               <option value="negative">Negative</option>
+               <option value="very-negative">Very Negative</ option>
+            </select>
+         </fieldset>
+         <fieldset id="final">
+            <label for="review" id="review-label"> Tell us about your experience
+            <textarea id="review" rows="5" cols="20"></textarea>
+            </label>
+            <label id="terms-label" for="terms">
+            <input type="checkbox" required id="terms"value="terms"name="terms-newsletter">
+            I agree to the Terms and Conditions</label>
+            <label id="newsletter-label" for="newsletter">
+            <input type="checkbox" id="newsletter" value="newsletter" name="terms-newsletter"> Subscribe to our Newsletter
+            </label>
+            <input type="submit" id="submit" Submit>
+         </fieldset>
+      </form>
+   </body>
+</html>
